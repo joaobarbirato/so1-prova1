@@ -1,6 +1,7 @@
-#include "../headers/queue.h"
+#pragma once
+#include "main.h"
 
 typedef struct{
     Queue queue;
-    pthread_mutex_t * mutex;
-}  HackerQueue;
+    sem_t * sem;
+} HackerQueue;
