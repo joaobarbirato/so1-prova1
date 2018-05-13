@@ -1,7 +1,15 @@
 #include "../headers/main.h"
+#include "../headers/boat.h"
+
 
 int main(){
-    pthread_mutex_t * mutex;
+    srand(time(NULL)); // random seed
+
+    Boat boat;
+
+    boat.n_hackers = 0;
+    boat.n_serfs = 0;
+
     printf("Helo world!\n");
     return 0;
 }
