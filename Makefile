@@ -6,9 +6,11 @@ main=script/main.c
 
 font=src/*.c
 
+options=-lpthread
+
 program:
-	$(CC) $(font) $(main) -o main.o
-	./main.o
+	$(CC) $(font) $(main) $(options) -o main.o
+	./main.o # executando
 
 clean:
 	rm -f main.o
