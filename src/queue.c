@@ -17,3 +17,5 @@ int remove_queue(Queue*q, const int pos){
     q->queue[pos] = -1;
     return r;
 } // end remove
+
+//implementaçao de lista só remore e insere
