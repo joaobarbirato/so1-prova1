@@ -1,3 +1,5 @@
+//implementa o coiso do livro
+
 // TODO: 
 /*
 
@@ -18,10 +20,10 @@ mutex.wait()
 
 hackerQueue.wait()
 
-board()
+board() //subir no barco
 barrier.wait()
 
-if isCaptain:
+if isCaptain: //capitao, pega o mutex e mexe o barco
     rowBoat()
     mutex.signal()                      # captain releases the mutex
 
