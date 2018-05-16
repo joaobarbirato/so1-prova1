@@ -8,5 +8,7 @@
 
 // custom libs
 #include "queue.h"
-#include "hacker.h"
-#include "serf.h"
+
+// person type
+#define HACKER 0
+#define SERF 1
