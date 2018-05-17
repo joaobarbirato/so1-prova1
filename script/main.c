@@ -1,6 +1,7 @@
 #include "../headers/main.h"
 #include "../headers/boat.h"
 
+// testando fork
 
 int main(){
     srand(time(NULL)); // random seed
