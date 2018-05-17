@@ -1,5 +1,7 @@
 #pragma once
 
+// not used, why?
+
 typedef struct{
     int * queue;
     int size;

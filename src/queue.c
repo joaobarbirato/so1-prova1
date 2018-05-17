@@ -1,4 +1,5 @@
 #include "../headers/queue.h"
+// not used, why?
 
 // Insert
 int insert_queue(Queue*q, const int x){
