@@ -8,3 +8,5 @@ typedef struct{
     int n_serfs;
     int cap;
 } Boat;
+
+void * board(void *a);
