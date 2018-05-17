@@ -6,6 +6,7 @@ struct pthread_board{
     int is_captain;
     int type;
 };
+// testando fork
 
 int main(){
     int is_captain; // false
