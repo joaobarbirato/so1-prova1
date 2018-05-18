@@ -120,7 +120,6 @@ int main(){
     struct pthread_board args;
     args.boat = &boat;
     args.is_captain = is_captain;
-    int i;
 
     // Creating threads
     while(1){
