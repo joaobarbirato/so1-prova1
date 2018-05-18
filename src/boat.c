@@ -107,8 +107,10 @@ void * board(void *a){
 // and the boat sets sail
 void row_boat(pthread_mutex_t * mutex, int * is_captain, sem_t * queue, const int cap){
     int i;
-    printf("Row!!\n");
+    printf("Row!!\n\n");
     sleep(5);               // resource
+
+    printf("Chegou ao seu destino, pronto parao outra viagem?\n\n");
 
     printf("Unload!!\n");   // unload console exhibition
     sleep(5);               // resource

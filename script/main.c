@@ -17,8 +17,87 @@ struct pthread_board{
     int type;
 };
 
+void apresentacaoInicial(){
+    printf("Bem-vindos ao primeiro projeto da disciplina Sistemas Operacionais 1!\n\n");
+    printf("Esse projeto baseia-se no problema River crossing problem.\n");
+    printf("Basicamente, este problema impoe uma regra de funcionamento: nao deve-se permitir um hacker e tres serf ou tres hackers e um serf no mesmo barco.\n\n");
+    printf("Dado a largada, apenas sera apresentado permutacoes que respeite as regras impostas! \n");
+    sleep(10);
+    system("clear");
+}
+void apresentacao(){
+    printf(" Vamos la                                                                    \n");
+    printf(" _ _ _                                                                       \n");
+    printf(" _|   |                                                                      \n");
+    printf(" _|_ _|                                                                      \n");
+    printf("      |                                                                      \n");
+    printf("   _ _|_ _ _ _ _ _ __                                                        \n");
+    printf("  |_             _ __|                                                       \n");
+    printf("    |_ _ _ _ _ _|/                                                           \n");
+}
+
+void apresentacao1(){
+    printf(" Vamos la                                                                    \n");
+    printf("               _ _ _                                                         \n");
+    printf("               _|   |                                                        \n");
+    printf("               _|_ _|                                                        \n");
+    printf("                |                                                            \n");
+    printf("             _ _|_ _ _ _ _ _ __                                              \n");
+    printf("            |_             _ __|                                             \n");
+    printf("              |_ _ _ _ _ _|/                                                 \n");
+}  
+
+void apresentacao2(){
+    printf(" Vamos la                                                                    \n");
+    printf("                                  _ _ _                                     \n");
+    printf("                                  _|   |                                    \n");
+    printf("                                  _|_ _|                                    \n");
+    printf("                                   |                                        \n");
+    printf("                                _ _|_ _ _ _ _ _ __                          \n");
+    printf("                               |_             _ __|                         \n");
+    printf("                                |_ _ _ _ _ _|/                               \n");
+}
+
+void apresentacao3(){
+    printf(" Vamos la                                                                    \n");
+    printf("                                                     _ _ _                   \n");
+    printf("                                                     _|   |                  \n");
+    printf("                                                     _|_ _|                  \n");
+    printf("                                                      |                      \n");
+    printf("                                                   _ _|_ _ _ _ _ _ __        \n");
+    printf("                                                  |_             _ __|       \n");
+    printf("                                                    |_ _ _ _ _ _|/           \n");
+}
+
+void apresentacao4(){
+    printf("Entao, eh dada a largada!!\n");
+    printf("Presentes no barco:\n\n");
+}
+
 // main
 int main(){
+    system("clear");
+    apresentacaoInicial();
+    for (int p = 0; p < 2; p++)
+    {
+        apresentacao();
+        sleep(1);
+        system("clear");
+        apresentacao1();
+        sleep(1);
+        system("clear");
+        apresentacao2();
+        sleep(1);
+        system("clear");
+        apresentacao3();
+        sleep(1);
+        system("clear");
+    }
+    apresentacao4();
+    sleep(5);
+
+
+
     srand(time(NULL)); // random seed
 
     int is_captain;
