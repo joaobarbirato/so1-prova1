@@ -115,8 +115,8 @@ int main(){
     pthread_mutex_init(&(boat.mutex), NULL);
     pthread_mutex_lock(&(boat.mutex));
 
-    sem_init(&boat.hackers_queue, 0, 0);    // not used, why?
-    sem_init(&boat.serfs_queue, 0, 0);      // not used, why?
+    sem_init(&boat.hackers_queue, 0, 0);        
+    sem_init(&boat.serfs_queue, 0, 0);      
 
     struct pthread_board args;
     args.boat = &boat;
@@ -129,17 +129,6 @@ int main(){
         int person_type = random() % 2; // with random type (HACKER or SERF)
         args.type = person_type;
         pthread_create(&person,NULL, board,(void *)&args);
-
-/*	int stop;
-	do{
-		if(kbhit()){
-			stop = getch();
-			if(stop == 1){
-				printf("Encerrando programa...");
-				break;
-			}
-		}
-	}*/
 
     }
     pthread_join(person, NULL);

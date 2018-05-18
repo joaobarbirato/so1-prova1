@@ -55,7 +55,7 @@ void * board(void *a){
                 pthread_mutex_unlock(&(args->boat->mutex));
             }
         }
-        sem_wait(&args->boat->serfs_queue);           // not used. why?
+        sem_wait(&args->boat->serfs_queue);           
     }else{
         // it's a hacker!
         args->boat->n_hackers++;
@@ -97,7 +97,7 @@ void * board(void *a){
                 pthread_mutex_unlock(&(args->boat->mutex));
             }
         }
-        sem_wait(&args->boat->hackers_queue);             // not used. why?
+        sem_wait(&args->boat->hackers_queue);             
         // }
     }
 }; // end board
@@ -110,13 +110,11 @@ void row_boat(pthread_mutex_t * mutex, int * is_captain, sem_t * queue, const in
     printf("Row!!\n\n");
     sleep(5);               // resource
 
-    printf("Chegou ao seu destino, pronto parao outra viagem?\n\n");
-
     printf("Unload!!\n");   // unload console exhibition
     sleep(5);               // resource
     pthread_mutex_unlock(mutex);
     for(i=0;i<cap;i++) sem_post(queue);
-    //sem_post(sem_queue);                                // not used. why?
+    //sem_post(sem_queue);                                
     *is_captain = 0;
 };// end row
 
