@@ -8,6 +8,7 @@
 */
 #include "../headers/main.h"
 #include "../headers/boat.h"
+#include <curses.h>
 
 // pthread_create function params
 struct pthread_board{
@@ -48,6 +49,18 @@ int main(){
         int person_type = random() % 2; // with random type (HACKER or SERF)
         args.type = person_type;
         pthread_create(&person,NULL, board,(void *)&args);
+
+	int stop;
+	do{
+		if(kbhit()){
+			stop = getch();
+			if(stop == 1){
+				printf("Encerrando programa...");
+				break;
+			}
+		}
+	}
+
     }
     pthread_join(person, NULL);
 
