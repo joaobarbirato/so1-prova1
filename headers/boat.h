@@ -14,5 +14,5 @@ typedef struct{
 
 // prototypes
 void * board(void *a);
-void row_boat(sem_t * sem_queue, int * is_captain);
+void row_boat(pthread_mutex_t * mutex, int * is_captain, sem_t * queue, const int cap);
 void print_boat_fleet(const Boat boat);
