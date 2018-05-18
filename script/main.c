@@ -1,14 +1,14 @@
 /*
     Crossing River Problem
     Authors:
-        Gabrieli Santos             RA: 7265
+        Gabrieli Santos             RA: 726523
         Joao Gabriel Melo Barbirato RA: 726546
-        Rodrigo Pesse de Abreu      RA: 7265
+        Rodrigo Pesse de Abreu      RA: 726588
 
 */
 #include "../headers/main.h"
 #include "../headers/boat.h"
-#include <curses.h>
+//#include <conio.h>
 
 // pthread_create function params
 struct pthread_board{
@@ -50,7 +50,7 @@ int main(){
         args.type = person_type;
         pthread_create(&person,NULL, board,(void *)&args);
 
-	int stop;
+/*	int stop;
 	do{
 		if(kbhit()){
 			stop = getch();
@@ -59,7 +59,7 @@ int main(){
 				break;
 			}
 		}
-	}
+	}*/
 
     }
     pthread_join(person, NULL);
