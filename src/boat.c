@@ -107,10 +107,10 @@ void * board(void *a){
 // and the boat sets sail
 void row_boat(pthread_mutex_t * mutex, int * is_captain, sem_t * queue, const int cap){
     int i;
-    printf("Row!!\n\n");
+    printf("Row!!\n");
     sleep(5);               // resource
 
-    printf("Unload!!\n");   // unload console exhibition
+    printf("Unload!!\n\n");   // unload console exhibition
     sleep(5);               // resource
     pthread_mutex_unlock(mutex);
     for(i=0;i<cap;i++) sem_post(queue);
