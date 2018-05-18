@@ -20,9 +20,10 @@ struct pthread_board{
 void apresentacaoInicial(){
     printf("Bem-vindos ao primeiro projeto da disciplina Sistemas Operacionais 1!\n\n");
     printf("Esse projeto baseia-se no problema River crossing problem.\n");
-    printf("Basicamente, este problema impoe uma regra de funcionamento: nao deve-se permitir um hacker e tres serf ou tres hackers e um serf no mesmo barco.\n\n");
+    printf("Existem varias pessoas de um lado do rio, dentre elas hackers e funcionarios da Microsoft, que precisam atravessar para o outro lado e existe apenas um barco. O barco so se movimenta se quatro pessoas estiverem nele. Entretanto, nao eh permitido que uma viagem seja feita se no barco estiverem presentes 3 hackers e 1 funcionario ou 3 funcionarios e 1 hacker. Qualquer outra combinacao eh permitida.\n\n");
+    printf("Você pode terminar a execução do programa a qualquer momento pressionando as teclas Ctrl+C do teclado\n\n");
     printf("Dado a largada, apenas sera apresentado permutacoes que respeite as regras impostas! \n");
-    sleep(10);
+    sleep(15);
     system("clear");
 }
 void apresentacao(){
