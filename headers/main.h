@@ -7,8 +7,6 @@
 #include <time.h>
 #include <semaphore.h>
 #include <unistd.h>
-// custom libs
-#include "queue.h"
 
 // person type
 #define HACKER 0

@@ -71,7 +71,7 @@ void apresentacao3(){
 }
 
 void apresentacao4(){
-    printf("Entao, eh dada a largada!!\n");
+    //printf("Entao, eh dada a largada!!\n");
     printf("Presentes no barco:\n\n");
 }
 
@@ -103,7 +103,6 @@ int main(){
 
     int is_captain;
     Boat boat;
-    Queue q;
     pthread_t person;
     is_captain = 0;
 
