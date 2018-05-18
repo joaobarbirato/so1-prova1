@@ -114,7 +114,7 @@ void row_boat(pthread_mutex_t * mutex, int * is_captain, sem_t * queue, const in
     sleep(5);               // resource
     pthread_mutex_unlock(mutex);
     for(i=0;i<cap;i++) sem_post(queue);
-    //sem_post(sem_queue);                                
+                          
     *is_captain = 0;
 };// end row
 
