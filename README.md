@@ -8,6 +8,21 @@ After all four threads have invoked board, exactly one of them should call a fun
 Don’t worry about the direction of travel. Assume we are only interested in traffic going in one of the directions.
 (http://greenteapress.com/semaphores/LittleBookOfSemaphores.pdf) [Little Book of Semaphores, pag 148]
 
+## Elementos
+### 2 Semáforos
+* Hacker's queue; (headers/boat.h)
+* Serf's queue; (headers/boat.h)
+
+### 1 Mutex
+* Mutex; (headers/boat.h)
+
+### 1 Barreira
+* Barrier; (headers/boat.h)
+
+### Threads
+* Threads criadas indeterminadamente; (script/main.c)
+  * Cada Thread chama a função `board`.
+
 ## Executar:
 ```
 $ make
