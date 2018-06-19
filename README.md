@@ -11,7 +11,7 @@ _After all four threads have invoked board, exactly one of them should call a fu
 _Don’t worry about the direction of travel. Assume we are only interested in traffic going in one of the directions._
 
 
-(http://greenteapress.com/semaphores/LittleBookOfSemaphores.pdf) [Little Book of Semaphores, pag 148]
+[Little Book of Semaphores, pag 148] (http://greenteapress.com/semaphores/LittleBookOfSemaphores.pdf)
 
 ## Executar:
 ```
